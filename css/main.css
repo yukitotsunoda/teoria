@@ -1,0 +1,184 @@
+/* Global */
+html {
+    scroll-behavior: smooth;
+    font-size: 10px !important;
+}
+
+body {
+    margin: 0;
+    color: #300504;
+    font-family: serif !important;
+    box-sizing: border-box;
+}
+
+p {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    background: transparent linear-gradient(114deg, #450d09 0%, #2c0403 100%) 0% 0% no-repeat padding-box;
+    color: #fbb03b;
+    font-size: 3.9rem;
+}
+
+header img {
+    position: absolute;
+    left: 5rem;
+    top: 2rem;
+    width: 8rem;
+    height: 8rem;
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/hero-lg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.hero__content-wrapper {
+    width: 100%;
+    max-width: 991px;
+    background-color: rgba(255, 255, 255, 0.64);
+}
+
+.hero__content {
+    margin: 1rem;
+    border: 2px solid #2f0503;
+    font-size: 4rem;
+}
+
+.hero__font-shadowed {
+    font-size: 5.9rem;
+    color: #ff9b00;
+    text-shadow: 5px 2px #ffffff;
+}
+
+.video-link-btn {
+    display: inline-block;
+    padding: 2rem 4rem;
+    color: #fbb03b;
+    background-color: #450d09;
+    font-size: 4.5rem;
+}
+
+.video-link-btn:hover {
+    opacity: 0.8;
+    transition: all 0.2s ease;
+}
+
+.video-link-btn img {
+    width: rem;
+    height: 5rem;
+    display: inline-block;
+    position: relative;
+    top: -.5rem;
+    margin-right: 2rem;
+}
+
+.section2 {
+    background: #fdfae9;
+    background-image: radial-gradient(#eee 4px, transparent 0);
+    background-size: 40px 40px;
+    background-position: 0 0;
+}
+
+.section2 h1 {
+    display: inline-block;
+    font-size: 5rem;
+    font-weight: bold;
+    border-bottom: solid #C48F4D 2px;
+    margin-bottom: 2rem;
+}
+
+.section2 p {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+}
+
+.section2 h2 {
+    font-size: 4rem;
+}
+
+@media only screen and (max-width: 1536px) {
+    html {
+        font-size: 8px !important;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 7px !important;
+    }
+    header {
+        font-size: 3rem;
+    }
+    header img {
+        top: 1.2rem;
+    }
+    .hero__font-shadowed {
+        text-shadow: none !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 6px !important;
+    }
+    header img {
+        top: 3.3rem
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    html {
+        font-size: 4.5px !important;
+    }
+    header {
+        padding-top: 8rem !important;
+        font-size: 4rem;
+    }
+    header img {
+        position: static;
+        display: block;
+        margin-bottom: 2rem;
+        width: 64px;
+        height: 64px;
+    }
+    .hero {
+        background: url(../images/hero-sm.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    .hero__content-wrapper {
+        position: absolute;
+        top: 55%;
+        width: 95vw;
+        margin: auto;
+    }
+    .hero__content {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .section2 p {
+        margin-bottom: 7rem;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    html {
+        font-size: 4px !important;
+    }
+}
